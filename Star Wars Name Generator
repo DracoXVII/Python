@@ -1,0 +1,9 @@
+print("STAR WARS NAME GENERATOR")
+first = input("First Name: ").strip()
+last = input("Last Name: ").strip()
+maiden = input("Mum's maiden name: ").strip()
+city = input("City where you were born: ").strip()
+
+name = f"{first[:3].capitalize()}{last[:2].lower()}{maiden[:2].capitalize()}{city[-2:].lower()}"
+
+print(f"Your Star Wars name is {name}")

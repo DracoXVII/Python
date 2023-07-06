@@ -1,0 +1,35 @@
+import os, time, random
+
+trumps = {}
+trumps["Sara"] = {"Intelligence": 178, "Speed": 168, "Guile": 80, "Baldness": 4}
+trumps["Spock"] = {"Intelligence": 200, "Speed": 75, "Guile": 60, "Baldness": 0}
+trumps["Drew"] = {"Intelligence": 154, "Speed": 162, "Guile": 99, "Baldness": 99}
+trumps["Frito"] = {"Intelligence": 105, "Speed": 199, "Guile": 155, "Baldness": 0}
+
+while True:
+  print("TOP TRUMPS")
+  print()
+  print("CHARACTERS")
+  print()
+  for key in trumps:
+    print(key)
+  user = input("Pick your Character ")
+  comp = random.choice(list(trumps.keys()))
+  print("The CPU has picked", comp)
+
+  print("Choose your stat: Intelligence, Speed, Guile & Baldness Level")
+
+  answer = input("> ")
+
+  print(f"{user}: {trumps[user][answer]}")
+  print(f"{comp}: {trumps[comp][answer]}")
+
+  if trumps[user][answer] > trumps[comp][answer]:
+    print(user, "WINS")
+  elif trumps[user][answer] < trumps[comp][answer]:
+    print(comp, "WINS")
+  else:
+    print("DRAW")
+
+  time.sleep(2)
+  os.system("clear")

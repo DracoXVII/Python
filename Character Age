@@ -1,0 +1,11 @@
+#Character Age
+
+character_name = "Sara"
+character_age = "34"
+
+print("There once was a woman named " + character_name + ",")
+print("she was " + character_age + " years old." )
+print("She really liked the name " + character_name + ",")
+print("but didn't like being " + character_age + ".")
+
+# Lesson pulled from https://www.youtube.com/watch?v=rfscVS0vtbw

@@ -1,0 +1,29 @@
+#To Do List
+class ToDoList:
+  def __init__(self, title):
+    self._title = title
+    self._todos = []
+
+  def create_todo(self,todo):
+    self._todos.append(todo)
+
+  def __str__(self):
+    return self._title
+
+  def __len__(self):
+    return len(self._todos)
+
+  def __iter__(self):
+    return iter(self._todos)
+
+tl = ToDoList("Conference")
+tl.create_todo("Buy Ticket")
+tl.create_todo("Call Hotel")
+tl.create_todo("Pack Luggage")
+tl.create_todo("Rent a Car")
+
+print(f"List '{tl}' has {len(tl)} items! ")
+for t in tl:
+  print(t)
+
+#Training video can be found https://www.youtube.com/watch?v=0vFG7NUBuSQ

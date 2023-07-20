@@ -1,0 +1,7 @@
+#Replace Phrase
+
+phrase = "GIRAFFE ACADEMY"
+print("*GIRAFFE*ACADEMY*")
+print(phrase.replace("GIRAFFE", "POLAR BEAR"))
+
+#Lesson pulled from https://www.youtube.com/watch?v=rfscVS0vtbw

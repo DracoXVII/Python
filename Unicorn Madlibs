@@ -1,0 +1,33 @@
+# Unicorn Madlibs
+
+plural_noun1 = input("Enter a plural noun: ")
+adjective1 = input("Enter an adjective: ")
+animals = input("Enter your favorite animal:")
+plural_noun2 = input("Enter another plural noun: ")
+adjective2 = input("Enter another adjective: ")
+color = input("Enter your favorite color: ")
+adjective3 = input("Enter another adjective: ")
+noun1 = input("Enter a noun: ")
+plural_noun3 = input("Enter another plural noun: ")
+adjective4 = input("Enter another adjective: ")
+verb1 = input("Enter a verb: ")
+plural_noun4 = input("Enter another plural noun: ")
+verb2 = input("Enter another verb: ")
+verb3 = input("Enter another verb: ")
+noun2 = input("Enter another noun: ")
+adjective5 = input("Enter another adjective: ")
+
+
+print()
+print("Unicorns aren't like other " +plural_noun1 + "; they're " + adjective1 + ".")
+print("They look like " + animals + ", ") 
+print("with " + plural_noun2 + " for feet and a " + adjective2 + " mane of hair.") 
+print("But unicorns are " + color +" and have " +adjective3 + "")
+print("" + noun1 +" on their heads. Some " +plural_noun3 + " don't ")
+print("believe unicorns are " + adjective4 + " but I believe in them.")
+print("I would love to " + verb1 + " a unicorn to faraway")
+print("" + plural_noun4 + "." " One thing I've always " + verb2 + "") 
+print("about is whether unicrons " + verb3 + " rainbows,")
+print("or is their " + noun2 + " " + adjective5 + " like any other animal's? ")
+
+#Lesson pulled from https://www.youtube.com/watch?v=rfscVS0vtbw

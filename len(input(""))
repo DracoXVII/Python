@@ -1,0 +1,6 @@
+print(len(input("What is your name? ")))
+
+OR
+
+string = input("What is your name? ")
+print(len(string))

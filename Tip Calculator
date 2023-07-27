@@ -12,6 +12,7 @@ total_tip_amount = bill * tip_as_percent
 total_bill = bill + total_tip_amount
 bill_per_person = total_bill / people
 final_amount = round(bill_per_person, 2)
+final_amount = "{:.2f}".format(bill_per_person)
 
 # FAQ: How to round to 2 decimal places?
 # Find the answer in the Q&A here: https://www.udemy.com/course/100-days-of-code/learn/lecture/17965132#questions/13315048
@@ -31,4 +32,5 @@ percentage = input("What percent would you like to tip? ")
 per_person = float(split) * float(percentage)
 tip_per_person = float(per_person)
 total_per_person = round(tip_per_person, 2)
+total_per_person = "{:.2f}".format(total_per_person)
 print(f"The total each person will pay is ${total_per_person}.")

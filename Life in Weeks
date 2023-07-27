@@ -1,0 +1,9 @@
+#Life in Weeks
+age = input("What is your current age?\n")
+age_as_num = int(age)
+years_left = 90 - age_as_num
+days_left = years_left * 365
+weeks_left = years_left * 52
+month_left = years_left * 12
+life_expectancy = (f"You have {days_left}, {weeks_left} weeks, and {month_left} months left.")
+print(life_expectancy)

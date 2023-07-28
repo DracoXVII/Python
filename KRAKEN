@@ -1,16 +1,25 @@
 #Rollercoaster Tickets
 print("Welcome to the KRAKEN!")
 height = int(input("What is your height in cm? "))
-
-
+bill = 0 
+#Height & Age
 if height >= 120:
   print("You can ride the KRAKEN!")
   age = int(input("How old are you? "))
   if age < 12:
-    print("That will be $5.")
+    bill = 5
+    print("A child ticket will be $5.")
   elif age <=18:
-    print("That will be $7.")
+    bill = 7
+    print("A youth ticket will be $7.")
   else:
-    print("That will be $12.")
+    bill= 12
+    print("An adult ticket will be $12.")
+#Photo & Bill
+  photo = input("Do you want a photo taken? Y or N. ")
+  if photo == "Y":
+    bill = bill + 3  
+    print(f"You're bill will be ${bill}. ")
+    
 else:
   print("Sorry, you must be taller to ride the KRAKEN!")
